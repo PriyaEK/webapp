@@ -35,6 +35,8 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'font-awesome-sass', '~> 4.6.2'
 #Use Hirb gem for better console data display
 gem 'hirb', '~> 0.7.3'
+#Use devise for user authenication
+gem 'devise', '~> 4.7', '>= 4.7.1'
 # Use jquery
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 
