@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 	get 'about',to: 'pages#about'
 	resources :contacts, only: :create
 	get 'contact-us' , to: 'contacts#new', as: 'new_contact'
+	devise_scope :user do  
+    get '/users/sign_out' => 'devise/sessions#destroy'     
+  end
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
